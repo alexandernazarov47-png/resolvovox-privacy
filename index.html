@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResolvoVox — Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --text: #1a1a2e;
+            --muted: #555;
+            --accent: #2563eb;
+            --border: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.08);
+            padding: 2.5rem 2rem;
+        }
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: .25rem;
+        }
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 2rem;
+            font-size: .95rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: .5rem;
+            padding-bottom: .35rem;
+            border-bottom: 1px solid var(--border);
+        }
+        p, li { margin-bottom: .6rem; }
+        ul { padding-left: 1.4rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            font-size: .8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: .75rem 0;
+            font-size: .93rem;
+        }
+        th, td {
+            text-align: left;
+            padding: .55rem .75rem;
+            border: 1px solid var(--border);
+        }
+        th { background: #f1f5f9; font-weight: 600; }
+        footer {
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-size: .85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<h1>Privacy Policy</h1>
+<p class="subtitle">ResolvoVox &mdash; Effective date: April 10, 2026</p>
+
+<p>
+    ResolvoVox (&ldquo;the App&rdquo;) is developed and maintained by an independent developer
+    (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This Privacy Policy explains what information the App
+    accesses, how it is used, and what choices you have.
+</p>
+
+<h2>1. What the App Does</h2>
+<p>
+    ResolvoVox helps you understand official German-language letters. You scan or
+    photograph a letter, the App recognizes the text on your device, then sends the
+    recognized text to the OpenAI API for analysis. The result&mdash;a plain-language
+    explanation, suggested actions, deadlines, and a draft reply&mdash;is shown and stored
+    locally on your device.
+</p>
+
+<h2>2. Data We Collect</h2>
+<p><strong>We do not collect, store, or transmit any personal data to our own servers.</strong>
+    The App does not have a backend server operated by us. There are no user accounts,
+    no registration, and no analytics or advertising SDKs.</p>
+
+<table>
+    <thead>
+        <tr><th>Data</th><th>Where it goes</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Recognized letter text (OCR output)</td>
+            <td>OpenAI API <span class="badge">third-party</span></td>
+            <td>AI-powered analysis of the letter content</td>
+        </tr>
+        <tr>
+            <td>OpenAI API key (yours)</td>
+            <td>Stored locally on device; sent to OpenAI with each request</td>
+            <td>Authentication with the OpenAI service</td>
+        </tr>
+        <tr>
+            <td>Letter history &amp; analysis results</td>
+            <td>Local device storage only</td>
+            <td>Allowing you to review past letters</td>
+        </tr>
+        <tr>
+            <td>App preferences (language, UI state)</td>
+            <td>Local device storage only</td>
+            <td>Remembering your settings</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>3. Camera &amp; Photo Library</h2>
+<p>
+    The App requests access to your <strong>camera</strong> and <strong>photo library</strong>
+    solely to capture or select images of letters for text recognition. Images are processed
+    on-device by Google ML Kit; they are <strong>not</strong> uploaded to any server. Only the
+    resulting text is sent to OpenAI for analysis.
+</p>
+
+<h2>4. Third-Party Services</h2>
+
+<ul>
+    <li>
+        <strong>OpenAI API</strong> &mdash; Recognized letter text is sent over an encrypted
+        HTTPS connection to OpenAI&rsquo;s servers for analysis. OpenAI&rsquo;s use of
+        this data is governed by their
+        <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+        and <a href="https://openai.com/policies/terms-of-use" target="_blank" rel="noopener">Terms of Use</a>.
+        When using the API with your own key, OpenAI states that API data is
+        <strong>not used to train their models</strong> by default.
+    </li>
+    <li>
+        <strong>Google ML Kit (Text Recognition)</strong> &mdash; Text recognition runs
+        <strong>entirely on your device</strong>. No image data leaves the device through
+        ML Kit. Google&rsquo;s ML Kit privacy information is available
+        <a href="https://developers.google.com/ml-kit" target="_blank" rel="noopener">here</a>.
+    </li>
+    <li>
+        <strong>Google Fonts</strong> &mdash; The App may download font files from Google&rsquo;s
+        servers. This involves a standard HTTPS request; Google&rsquo;s
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+        applies to those requests.
+    </li>
+</ul>
+
+<h2>5. Permissions</h2>
+<table>
+    <thead>
+        <tr><th>Permission</th><th>Why it is needed</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Internet</td><td>Communicate with the OpenAI API and load fonts</td></tr>
+        <tr><td>Camera</td><td>Photograph letters for OCR scanning</td></tr>
+        <tr><td>Notifications</td><td>Send local deadline reminders you set</td></tr>
+        <tr><td>Vibration</td><td>Haptic feedback for notifications</td></tr>
+        <tr><td>Network state</td><td>Check connectivity before API calls</td></tr>
+    </tbody>
+</table>
+
+<h2>6. Data Storage &amp; Security</h2>
+<ul>
+    <li>All letter history and your API key are stored <strong>locally</strong> on your device
+        using the platform&rsquo;s standard storage mechanisms.</li>
+    <li>Data transmitted to OpenAI travels over <strong>TLS-encrypted HTTPS</strong>.</li>
+    <li>You can delete all stored data at any time by clearing the App&rsquo;s data in your
+        device settings or by using the in-app history management features.</li>
+    <li>The App provides an export/import feature for your letter history; exported files are
+        saved locally and you control where they are shared.</li>
+</ul>
+
+<h2>7. Children&rsquo;s Privacy</h2>
+<p>
+    The App is not directed at children under 13. We do not knowingly collect personal
+    information from children.
+</p>
+
+<h2>8. Your Rights</h2>
+<ul>
+    <li><strong>Access &amp; deletion:</strong> Since all data is stored on your device, you have
+        full control. Clear the app data or uninstall the App to remove everything.</li>
+    <li><strong>OpenAI data:</strong> For data sent to OpenAI, refer to
+        <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI&rsquo;s Privacy Policy</a>
+        for your rights regarding data they process.</li>
+</ul>
+
+<h2>9. Changes to This Policy</h2>
+<p>
+    We may update this Privacy Policy from time to time. Any changes will be reflected on
+    this page with an updated effective date. Continued use of the App after changes
+    constitutes acceptance of the revised policy.
+</p>
+
+<h2>10. Contact</h2>
+<p>
+    If you have questions or concerns about this Privacy Policy, please contact us at:<br>
+    <strong>Email:</strong> <a href="mailto:alexander.nazarov47@gmail.com">alexander.nazarov47@gmail.com</a>
+</p>
+
+<footer>
+    &copy; 2026 ResolvoVox. All rights reserved.<br>
+    Last updated: April 10, 2026
+</footer>
+
+</div>
+</body>
+</html>
